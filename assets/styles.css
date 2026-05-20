@@ -310,6 +310,7 @@ body.mode-moon .moon-field {
   color: var(--text);
   font-family: var(--sans);
   font-size: 17px;
+  font-weight: 700;
   line-height: 1.55;
 }
 
