@@ -339,10 +339,10 @@ body.mode-moon .moon-field {
   display: grid;
   grid-template-columns: 44px 1fr auto;
   align-items: center;
-  min-height: 38px;
+  min-height: 46px;
   border-bottom: 1px solid var(--line);
   color: var(--text);
-  font-size: 12px;
+  font-size: 14px;
   transition: color 180ms ease, transform 220ms var(--ease);
 }
 
@@ -358,7 +358,7 @@ body.mode-moon .moon-field {
 .year,
 .case-count {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .mode-panel {
