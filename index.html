@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harvey Yang is a Chicago-based MBA candidate and software engineer building practical AI, automation, and full-stack systems for business workflows.">
+  <title>Harvey Yang | AI Automation & Business Systems</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="mode-day">
+  <canvas id="atmosphere-canvas" aria-hidden="true"></canvas>
+  <div class="sun-field" aria-hidden="true">
+    <div class="window-light"></div>
+    <div class="leaf-shadow leaf-shadow-a"></div>
+    <div class="leaf-shadow leaf-shadow-b"></div>
+    <div class="leaf-shadow leaf-shadow-c"></div>
+  </div>
+  <div class="moon-field" aria-hidden="true">
+    <div class="moon"></div>
+    <div class="moon-beam"></div>
+  </div>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Profile navigation">
+      <header class="brand">
+        <a class="brand-mark" href="#overview" aria-label="Harvey Yang home">
+          <span>HY</span>
+        </a>
+        <div>
+          <p class="eyebrow">Harvey Yang</p>
+          <p class="brand-subtitle">Chicago / AI systems</p>
+        </div>
+      </header>
+
+      <section class="bio">
+        <p>Business-minded software engineer building AI automation, data tools, and full-stack systems for operational workflows.</p>
+      </section>
+
+      <section class="sidebar-section">
+        <div class="section-line">
+          <span>Archive.Log</span>
+        </div>
+        <nav class="timeline-nav" aria-label="Project archive">
+          <a href="#overview" data-section="overview" class="timeline-row active">
+            <span class="year">Now</span>
+            <span class="item-name">Overview</span>
+            <span class="case-count">Profile</span>
+          </a>
+          <a href="#agent-platform" data-section="agent-platform" class="timeline-row">
+            <span class="year">26</span>
+            <span class="item-name">AI Agent Platform</span>
+            <span class="case-count">Case</span>
+          </a>
+          <a href="#artist-leads" data-section="artist-leads" class="timeline-row">
+            <span class="year">26</span>
+            <span class="item-name">Artist Leads</span>
+            <span class="case-count">MVP</span>
+          </a>
+          <a href="#college-rating" data-section="college-rating" class="timeline-row">
+            <span class="year">25</span>
+            <span class="item-name">College Rating</span>
+            <span class="case-count">Data</span>
+          </a>
+          <a href="#voice-game" data-section="voice-game" class="timeline-row">
+            <span class="year">24</span>
+            <span class="item-name">Voice Game</span>
+            <span class="case-count">Unity</span>
+          </a>
+          <a href="#lab-system" data-section="lab-system" class="timeline-row">
+            <span class="year">24</span>
+            <span class="item-name">Lab Database</span>
+            <span class="case-count">Ops</span>
+          </a>
+          <a href="#contact" data-section="contact" class="timeline-row">
+            <span class="year">Next</span>
+            <span class="item-name">Contact</span>
+            <span class="case-count">Email</span>
+          </a>
+        </nav>
+      </section>
+
+      <section class="mode-panel" aria-label="Atmosphere mode">
+        <div class="section-line">
+          <span>Atmosphere</span>
+        </div>
+        <div class="mode-grid">
+          <button class="mode-button active" type="button" data-mode="day" aria-pressed="true">
+            <span class="mode-icon mode-icon-day"></span>
+            <span>Day</span>
+          </button>
+          <button class="mode-button" type="button" data-mode="sunny" aria-pressed="false">
+            <span class="mode-icon mode-icon-sunny"></span>
+            <span>Sunny</span>
+          </button>
+          <button class="mode-button" type="button" data-mode="rain" aria-pressed="false">
+            <span class="mode-icon mode-icon-rain"></span>
+            <span>Rain</span>
+          </button>
+          <button class="mode-button" type="button" data-mode="moon" aria-pressed="false">
+            <span class="mode-icon mode-icon-moon"></span>
+            <span>Moon</span>
+          </button>
+        </div>
+      </section>
+
+      <footer class="sidebar-footer">
+        <a href="mailto:1094102876@qq.com">Email</a>
+        <a href="#contact">Collaborate</a>
+      </footer>
+    </aside>
+
+    <main class="showcase" id="showcase">
+      <header class="showcase-header">
+        <div class="showcase-meta">
+          <span>Showcase</span>
+          <span id="counter">01 / 07</span>
+        </div>
+        <div class="progress-ticks" aria-hidden="true">
+          <span class="tick active"></span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+        </div>
+      </header>
+
+      <section class="case-section hero-section" id="overview" data-title="Overview">
+        <div class="case-meta-row">
+          <div>
+            <p class="kicker">MBA candidate / Software engineer / AI automation builder</p>
+            <h1>Harvey Yang</h1>
+          </div>
+          <p class="case-year">Chicago, IL</p>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="lead">I build practical AI and software systems for business workflows.</p>
+            <p>Based in Chicago, I work across full-stack development, business analytics, and AI agent systems to turn operational problems into usable technical solutions.</p>
+          </div>
+          <div class="system-map" aria-label="Business and AI workflow map">
+            <div class="map-node node-core">Business Need</div>
+            <div class="map-node node-a">Analysis</div>
+            <div class="map-node node-b">Automation</div>
+            <div class="map-node node-c">Internal Tools</div>
+            <div class="map-node node-d">Dashboards</div>
+            <div class="map-node node-e">AI Agents</div>
+            <svg viewBox="0 0 520 360" aria-hidden="true">
+              <path d="M260 180 C210 140 160 112 112 96"></path>
+              <path d="M260 180 C315 122 360 96 412 86"></path>
+              <path d="M260 180 C184 210 130 238 88 286"></path>
+              <path d="M260 180 C336 218 388 246 430 292"></path>
+              <path d="M260 180 C258 126 258 92 260 58"></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="agent-platform" data-title="AI Agent Platform">
+        <div class="case-meta-row">
+          <div>
+            <p class="kicker">AI infrastructure / Workflow automation</p>
+            <h2>AI Agent Platform</h2>
+          </div>
+          <p class="case-year">2026</p>
+        </div>
+        <div class="case-layout">
+          <article class="case-card primary">
+            <span class="label">Problem</span>
+            <p>Business workflows often span email, calendar, documents, memory, research, and approvals, but most AI demos stop at chat.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Built</span>
+            <p>Designed a cloud-hosted multi-agent architecture with approval-gated actions, memory retrieval, and tool surfaces for real operations.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Explored</span>
+            <p>Flue, Hermes, LangGraph, LangSmith, Codex, Claude Code, MCP-style tools, Fly.io deployment, and provider routing.</p>
+          </article>
+          <div class="tags">
+            <span>AI agents</span><span>LLM APIs</span><span>Cloud hosting</span><span>Tool use</span><span>Workflow design</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="artist-leads" data-title="Artist Leads">
+        <div class="case-meta-row">
+          <div>
+            <p class="kicker">Lead generation / Marketplace concept</p>
+            <h2>Artist Lead Generation</h2>
+          </div>
+          <p class="case-year">2026</p>
+        </div>
+        <div class="case-layout">
+          <article class="case-card primary">
+            <span class="label">Concept</span>
+            <p>A demand-capture platform that helps overseas clients describe custom art requests and routes qualified leads to human artists.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Workflow</span>
+            <p>Fake-door MVP landing page, chatbot intake, SEO-driven acquisition, request qualification, ticketing, and artist handoff.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Business lens</span>
+            <p>Built around validating demand before overbuilding supply-side marketplace infrastructure.</p>
+          </article>
+          <div class="tags">
+            <span>SEO</span><span>Lead qualification</span><span>Chatbot intake</span><span>Marketplace MVP</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="college-rating" data-title="College Rating">
+        <div class="case-meta-row">
+          <div>
+            <p class="kicker">Data product / Social impact</p>
+            <h2>Gender Fair College Rating</h2>
+          </div>
+          <p class="case-year">2025</p>
+        </div>
+        <div class="case-layout">
+          <article class="case-card primary">
+            <span class="label">Scope</span>
+            <p>Evaluated gender fairness across more than 1,000 colleges using public datasets and a user-facing platform.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Role</span>
+            <p>Translated stakeholder needs into user stories, product scope, prototypes, and structured data workflows.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Tools</span>
+            <p>Flutter, SQL, JavaScript, front-end prototyping, and education-related public data.</p>
+          </article>
+          <div class="tags">
+            <span>Data visualization</span><span>SQL</span><span>Flutter</span><span>Product scope</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="voice-game" data-title="Voice Game">
+        <div class="case-meta-row">
+          <div>
+            <p class="kicker">Interactive systems / GameJam</p>
+            <h2>Voice-Controlled Game</h2>
+          </div>
+          <p class="case-year">2024</p>
+        </div>
+        <div class="case-layout">
+          <article class="case-card primary">
+            <span class="label">Interaction</span>
+            <p>A Unity game where voice pitch and loudness become part of the core gameplay loop.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Built</span>
+            <p>Designed the game loop, implemented C# gameplay systems, shaped the art direction, and iterated through player feedback.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Focus</span>
+            <p>Performance, responsiveness, and making an unusual input method feel readable to players.</p>
+          </article>
+          <div class="tags">
+            <span>Unity</span><span>C#</span><span>Game loop</span><span>Voice input</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="lab-system" data-title="Lab Database">
+        <div class="case-meta-row">
+          <div>
+            <p class="kicker">Database-backed operations</p>
+            <h2>Lab Database Management System</h2>
+          </div>
+          <p class="case-year">2024</p>
+        </div>
+        <div class="case-layout">
+          <article class="case-card primary">
+            <span class="label">Problem</span>
+            <p>Lab workflows need structured records, clear handoffs, and interfaces that support repeated operational use.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Built</span>
+            <p>A database-backed web system using Java and web development practices, with use cases, user stories, and prototypes.</p>
+          </article>
+          <article class="case-card">
+            <span class="label">Impact</span>
+            <p>Focused on workflow clarity, reliable information management, and practical usability for operational teams.</p>
+          </article>
+          <div class="tags">
+            <span>Java</span><span>Databases</span><span>Use cases</span><span>Workflow management</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section contact-section" id="contact" data-title="Contact">
+        <div class="case-meta-row">
+          <div>
+            <p class="kicker">Business analytics / Solutions engineering</p>
+            <h2>Let’s build useful systems.</h2>
+          </div>
+          <p class="case-year">Open to collaboration</p>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <p class="lead">Interested in AI automation, business analytics, or full-stack systems?</p>
+            <p>Contact Harvey Yang to discuss workflow automation, technical solutions, or project collaboration.</p>
+          </div>
+          <div class="skill-columns">
+            <div>
+              <span class="label">Languages</span>
+              <p>Python, JavaScript, Java, SQL, HTML, CSS, C#, R</p>
+            </div>
+            <div>
+              <span class="label">Systems</span>
+              <p>React, Flutter, Unity, PostgreSQL, Firebase, Docker-based deployment, Fly.io</p>
+            </div>
+            <div>
+              <span class="label">Analytics</span>
+              <p>Data visualization, business analysis, machine learning basics, financial modeling, text mining</p>
+            </div>
+          </div>
+          <a class="contact-link" href="mailto:1094102876@qq.com">1094102876@qq.com</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
